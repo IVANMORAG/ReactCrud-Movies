@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: #8e8787;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.main-content {
+  display: flex;
+  gap: 20px;
+}
+
+.left-panel {
+  flex: 1;
+}
+
+.right-panel {
+  flex: 2;
+}
+
+.movie-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.movie-form h2 {
+  margin-bottom: 15px;
+}
+
+.movie-form input,
+.movie-form textarea,
+.movie-form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.movie-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.movie-form button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.movie-form button:hover {
+  background: #0056b3;
+}
+
+.filters {
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.movie-list ul,
+.favorites ul {
+  list-style: none;
+}
+
+.movie-list li,
+.favorites li {
+  background: #f9f9f9;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border-left: 4px solid #007bff;
+}
+
+.movie-list li.favorite {
+  border-left-color: gold;
+}
+
+.movie-list h3,
+.favorites h3 {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.movie-list p {
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.movie-list span {
+  display: inline-block;
+  background: #eee;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.8em;
+  color: #555;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  padding: 5px 10px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.actions button:nth-child(1) {
+  background: #ffc107;
+  color: #333;
+}
+
+.actions button:nth-child(2) {
+  background: #dc3545;
+  color: white;
+}
+
+.actions button:nth-child(3) {
+  background: transparent;
+  color: gold;
+  font-size: 1.2em;
+}
+
+.favorites li {
+  border-left-color: gold;
+}
